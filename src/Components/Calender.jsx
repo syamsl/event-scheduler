@@ -8,7 +8,9 @@ const Calender = () => {
   const calendarRef = useRef(null);
 
   const onEventAdded = (event) => {
-    let calendarApi = this.calendarRef.current.getApi();
+    //Has the submitted title start and end date
+    console.log(event);
+    let calendarApi = calendarRef.current.getApi();
     calendarApi.addEvent(event);
   };
 
